@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Launcher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bundle/static/css/style.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <div class="icon">
+                <img src="./bundle/images/icon.png" alt="icon">
+            </div>
+            <ul>
+                <li>
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                        <path
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+                            fill="white"></path>
+                    </svg>
+                    <a href="#">Worlds</a>
+                </li>
+                <li>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6 2C4.89543 2 4 2.89543 4 4V16C4 17.1046 4.89543 18 6 18H14C15.1046 18 16 17.1046 16 16V7.41421C16 6.88378 15.7893 6.37507 15.4142 6L12 2.58579C11.6249 2.21071 11.1162 2 10.5858 2H6ZM11 8C11 7.44772 10.5523 7 10 7C9.44772 7 9 7.44772 9 8V11.5858L7.70711 10.2929C7.31658 9.90237 6.68342 9.90237 6.29289 10.2929C5.90237 10.6834 5.90237 11.3166 6.29289 11.7071L9.29289 14.7071C9.68342 15.0976 10.3166 15.0976 10.7071 14.7071L13.7071 11.7071C14.0976 11.3166 14.0976 10.6834 13.7071 10.2929C13.3166 9.90237 12.6834 9.90237 12.2929 10.2929L11 11.5858V8Z"
+                            fill="#fff" />
+                    </svg>
+                    <a href="#">Documentation</a>
+                </li>
+                <li>
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                        <path
+                            d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"
+                            fill="white"></path>
+                    </svg>
+                    <a href="#">Discord</a>
+                </li>
+                <li>
+                    <svg width="20" height="20" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M4.271 18.3457C4.271 18.3457 6.50002 15.5 12 15.5C17.5 15.5 19.7291 18.3457 19.7291 18.3457"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <a href="#">Profile</a>
+                </li>
+                <li>
+                    <svg fill="#fff" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g>
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M10 11V8l5 4-5 4v-3H1v-2h9zm-7.542 4h2.124A8.003 8.003 0 0 0 20 12 8 8 0 0 0 4.582 9H2.458C3.732 4.943 7.522 2 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10c-4.478 0-8.268-2.943-9.542-7z" />
+                        </g>
+                    </svg>
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" transform="matrix(-1 0 0 1 18 3)">
+                            <path d="m10.595 10.5 2.905-3-2.905-3" />
+                            <path d="m13.5 7.5h-9" />
+                            <path
+                                d="m10.5.5-8 .00224609c-1.1043501.00087167-1.9994384.89621131-2 2.00056153v9.99438478c.0005616 1.1043502.8956499 1.9996898 2 2.0005615l8 .0022461" />
+                        </g>
+                    </svg>
+                    <a href="#">Quit</a>
+                </li>
+            </ul>
+            <div class="side-bar-info">
+                <p>Update Available</p>
+                <a href="#">Stable (v2.7.1)</a>
+                <p>Eco MetaLand Version 2.62</p>
+            </div>
+        </aside>
+        <section>
+            <div class="upper">
+                <div class="nav-bar">
+                    <div class="search-bar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                        <input type="text" name="" id="" placeholder="search">
+                    </div>
+                    <div class="nav-stuff">
+                        <a href="#">
+                            <h6>ALL</h6>
+                        </a>
+                        <a href="#">
+                            <h6>OTHERS</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="header">
+                    <a href="#">
+                        <svg height="30px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M2 11V5h6v6H2zm4-2V7H4v2h2zm16-4H10v2h12V5zm0 4H10v2h12V9zm-12 4h12v2H10v-2zm12 4H10v2h12v-2zM2 13v6h6v-6H2zm4 2v2H4v-2h2z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg style="color: white" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.00001 13.2929V0H4.00001V13.2929L6.14645 11.1464L6.85356 11.8536L3.85356 14.8536C3.75979 14.9473 3.63262 15 3.50001 15C3.3674 15 3.24022 14.9473 3.14645 14.8536L0.146454 11.8536L0.853561 11.1464L3.00001 13.2929ZM11.5 1C10.6716 1 10 1.67157 10 2.5V4H13V2.5C13 1.67157 12.3284 1 11.5 1ZM13 5V7H14V2.5C14 1.11929 12.8807 0 11.5 0C10.1193 0 9.00001 1.11929 9.00001 2.5V7H10V5H13ZM9.00001 8H12C13.1046 8 14 8.89543 14 10C14 10.5973 13.7381 11.1335 13.3229 11.5C13.7381 11.8665 14 12.4027 14 13C14 14.1046 13.1046 15 12 15H9.00001V8ZM12 11C12.5523 11 13 10.5523 13 10C13 9.44772 12.5523 9 12 9H10V11H12ZM10 12H12C12.5523 12 13 12.4477 13 13C13 13.5523 12.5523 14 12 14H10V12Z"
+                                fill="white"></path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                                fill="white">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg height="25px" width="25px" style="color: white" xmlns="http://www.w3.org/2000/svg"
+                            width="512" height="512" viewBox="0 0 512 512">
+                            <title>ionicons-v5-b</title>
+                            <path d="M448,256c0-106-86-192-192-192S64,150,64,256s86,192,192,192S448,362,448,256Z"
+                                style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:32px" fill="white">
+                            </path>
+                            <path d="M341.54,197.85l-11.37-13.23a103.37,103.37,0,1,0,22.71,105.84"
+                                style="fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+                                fill="white"></path>
+                            <path
+                                d="M367.32,162a8.44,8.44,0,0,0-6,2.54l-59.54,59.54a8.61,8.61,0,0,0,6.09,14.71h59.54a8.62,8.62,0,0,0,8.62-8.62V170.61a8.61,8.61,0,0,0-8.68-8.63Z"
+                                fill="white"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="worlds">
+                    <div class="card dark-card">
+                        <div class="card-img-container">
+                            <img src="./bundle/images/world.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icons">
+                                <div class="icon-top-right">
+                                    <img src="./bundle/images/icon.png" alt="Icon" height="50px">
+                                </div>
+                                <div class="icon-bottom">
+                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="61" height="61"
+                                        fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path
+                                            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                                            id="mainIconPathAttribute" fill="green"></path>
+                                    </svg>
+                                    <svg height="60px" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                        viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet"
+                                        version="1.0">
+                                        <defs>
+                                            <clipPath id="id1">
+                                                <path
+                                                    d="M 3.386719 7.164062 L 26.613281 7.164062 L 26.613281 22.40625 L 3.386719 22.40625 Z M 3.386719 7.164062 "
+                                                    clip-rule="nonzero" />
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#id1)">
+                                            <path fill="rgb(100%, 100%, 100%)"
+                                                d="M 3.398438 22.40625 L 26.601562 22.40625 L 26.601562 19.867188 L 3.398438 19.867188 Z M 3.398438 16.054688 L 26.601562 16.054688 L 26.601562 13.515625 L 3.398438 13.515625 Z M 3.398438 7.164062 L 3.398438 9.703125 L 26.601562 9.703125 L 26.601562 7.164062 Z M 3.398438 7.164062 "
+                                                fill-opacity="1" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="worlds">
+                    <div class="card dark-card">
+                        <div class="card-img-container">
+                            <img src="./bundle/images/world.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icons">
+                                <div class="icon-top-right">
+                                    <img src="./bundle/images/icon.png" alt="Icon" height="50px">
+                                </div>
+                                <div class="icon-bottom">
+                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="61" height="61"
+                                        fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path
+                                            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                                            id="mainIconPathAttribute" fill="green"></path>
+                                    </svg>
+                                    <svg height="60px" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                        viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet"
+                                        version="1.0">
+                                        <defs>
+                                            <clipPath id="id1">
+                                                <path
+                                                    d="M 3.386719 7.164062 L 26.613281 7.164062 L 26.613281 22.40625 L 3.386719 22.40625 Z M 3.386719 7.164062 "
+                                                    clip-rule="nonzero" />
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#id1)">
+                                            <path fill="rgb(100%, 100%, 100%)"
+                                                d="M 3.398438 22.40625 L 26.601562 22.40625 L 26.601562 19.867188 L 3.398438 19.867188 Z M 3.398438 16.054688 L 26.601562 16.054688 L 26.601562 13.515625 L 3.398438 13.515625 Z M 3.398438 7.164062 L 3.398438 9.703125 L 26.601562 9.703125 L 26.601562 7.164062 Z M 3.398438 7.164062 "
+                                                fill-opacity="1" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="worlds">
+                    <div class="card dark-card">
+                        <div class="card-img-container">
+                            <img src="./bundle/images/world.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icons">
+                                <div class="icon-top-right">
+                                    <img src="./bundle/images/icon.png" alt="Icon" height="50px">
+                                </div>
+                                <div class="icon-bottom">
+                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="61" height="61"
+                                        fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path
+                                            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                                            id="mainIconPathAttribute" fill="green"></path>
+                                    </svg>
+                                    <svg height="60px" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                        viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet"
+                                        version="1.0">
+                                        <defs>
+                                            <clipPath id="id1">
+                                                <path
+                                                    d="M 3.386719 7.164062 L 26.613281 7.164062 L 26.613281 22.40625 L 3.386719 22.40625 Z M 3.386719 7.164062 "
+                                                    clip-rule="nonzero" />
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#id1)">
+                                            <path fill="rgb(100%, 100%, 100%)"
+                                                d="M 3.398438 22.40625 L 26.601562 22.40625 L 26.601562 19.867188 L 3.398438 19.867188 Z M 3.398438 16.054688 L 26.601562 16.054688 L 26.601562 13.515625 L 3.398438 13.515625 Z M 3.398438 7.164062 L 3.398438 9.703125 L 26.601562 9.703125 L 26.601562 7.164062 Z M 3.398438 7.164062 "
+                                                fill-opacity="1" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="worlds">
+                    <div class="card dark-card">
+                        <div class="card-img-container">
+                            <img src="./bundle/images/world.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icons">
+                                <div class="icon-top-right">
+                                    <img src="./bundle/images/icon.png" alt="Icon" height="50px">
+                                </div>
+                                <div class="icon-bottom">
+                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="61" height="61"
+                                        fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path
+                                            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                                            id="mainIconPathAttribute" fill="green"></path>
+                                    </svg>
+                                    <svg height="60px" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                        viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet"
+                                        version="1.0">
+                                        <defs>
+                                            <clipPath id="id1">
+                                                <path
+                                                    d="M 3.386719 7.164062 L 26.613281 7.164062 L 26.613281 22.40625 L 3.386719 22.40625 Z M 3.386719 7.164062 "
+                                                    clip-rule="nonzero" />
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#id1)">
+                                            <path fill="rgb(100%, 100%, 100%)"
+                                                d="M 3.398438 22.40625 L 26.601562 22.40625 L 26.601562 19.867188 L 3.398438 19.867188 Z M 3.398438 16.054688 L 26.601562 16.054688 L 26.601562 13.515625 L 3.398438 13.515625 Z M 3.398438 7.164062 L 3.398438 9.703125 L 26.601562 9.703125 L 26.601562 7.164062 Z M 3.398438 7.164062 "
+                                                fill-opacity="1" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="worlds">
+                    <div class="card dark-card">
+                        <div class="card-img-container">
+                            <img src="./bundle/images/world.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icons">
+                                <div class="icon-top-right">
+                                    <img src="./bundle/images/icon.png" alt="Icon" height="50px">
+                                </div>
+                                <div class="icon-bottom">
+                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="61" height="61"
+                                        fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path
+                                            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                                            id="mainIconPathAttribute" fill="green"></path>
+                                    </svg>
+                                    <svg height="60px" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                        viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet"
+                                        version="1.0">
+                                        <defs>
+                                            <clipPath id="id1">
+                                                <path
+                                                    d="M 3.386719 7.164062 L 26.613281 7.164062 L 26.613281 22.40625 L 3.386719 22.40625 Z M 3.386719 7.164062 "
+                                                    clip-rule="nonzero" />
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#id1)">
+                                            <path fill="rgb(100%, 100%, 100%)"
+                                                d="M 3.398438 22.40625 L 26.601562 22.40625 L 26.601562 19.867188 L 3.398438 19.867188 Z M 3.398438 16.054688 L 26.601562 16.054688 L 26.601562 13.515625 L 3.398438 13.515625 Z M 3.398438 7.164062 L 3.398438 9.703125 L 26.601562 9.703125 L 26.601562 7.164062 Z M 3.398438 7.164062 "
+                                                fill-opacity="1" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="worlds">
+                    <div class="card dark-card">
+                        <div class="card-img-container">
+                            <img src="./bundle/images/world.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icons">
+                                <div class="icon-top-right">
+                                    <img src="./bundle/images/icon.png" alt="Icon" height="50px">
+                                </div>
+                                <div class="icon-bottom">
+                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="61" height="61"
+                                        fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path
+                                            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                                            id="mainIconPathAttribute" fill="green"></path>
+                                    </svg>
+                                    <svg height="60px" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                        viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet"
+                                        version="1.0">
+                                        <defs>
+                                            <clipPath id="id1">
+                                                <path
+                                                    d="M 3.386719 7.164062 L 26.613281 7.164062 L 26.613281 22.40625 L 3.386719 22.40625 Z M 3.386719 7.164062 "
+                                                    clip-rule="nonzero" />
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#id1)">
+                                            <path fill="rgb(100%, 100%, 100%)"
+                                                d="M 3.398438 22.40625 L 26.601562 22.40625 L 26.601562 19.867188 L 3.398438 19.867188 Z M 3.398438 16.054688 L 26.601562 16.054688 L 26.601562 13.515625 L 3.398438 13.515625 Z M 3.398438 7.164062 L 3.398438 9.703125 L 26.601562 9.703125 L 26.601562 7.164062 Z M 3.398438 7.164062 "
+                                                fill-opacity="1" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="worlds">
+                    <div class="card dark-card">
+                        <div class="card-img-container">
+                            <img src="./bundle/images/world.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icons">
+                                <div class="icon-top-right">
+                                    <img src="./bundle/images/icon.png" alt="Icon" height="50px">
+                                </div>
+                                <div class="icon-bottom">
+                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="61" height="61"
+                                        fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path
+                                            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                                            id="mainIconPathAttribute" fill="green"></path>
+                                    </svg>
+                                    <svg height="60px" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                        viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet"
+                                        version="1.0">
+                                        <defs>
+                                            <clipPath id="id1">
+                                                <path
+                                                    d="M 3.386719 7.164062 L 26.613281 7.164062 L 26.613281 22.40625 L 3.386719 22.40625 Z M 3.386719 7.164062 "
+                                                    clip-rule="nonzero" />
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#id1)">
+                                            <path fill="rgb(100%, 100%, 100%)"
+                                                d="M 3.398438 22.40625 L 26.601562 22.40625 L 26.601562 19.867188 L 3.398438 19.867188 Z M 3.398438 16.054688 L 26.601562 16.054688 L 26.601562 13.515625 L 3.398438 13.515625 Z M 3.398438 7.164062 L 3.398438 9.703125 L 26.601562 9.703125 L 26.601562 7.164062 Z M 3.398438 7.164062 "
+                                                fill-opacity="1" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="worlds">
+                    <div class="card dark-card">
+                        <div class="card-img-container">
+                            <img src="./bundle/images/world.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icons">
+                                <div class="icon-top-right">
+                                    <img src="./bundle/images/icon.png" alt="Icon" height="50px">
+                                </div>
+                                <div class="icon-bottom">
+                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="61" height="61"
+                                        fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path
+                                            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                                            id="mainIconPathAttribute" fill="green"></path>
+                                    </svg>
+                                    <svg height="60px" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                        viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet"
+                                        version="1.0">
+                                        <defs>
+                                            <clipPath id="id1">
+                                                <path
+                                                    d="M 3.386719 7.164062 L 26.613281 7.164062 L 26.613281 22.40625 L 3.386719 22.40625 Z M 3.386719 7.164062 "
+                                                    clip-rule="nonzero" />
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#id1)">
+                                            <path fill="rgb(100%, 100%, 100%)"
+                                                d="M 3.398438 22.40625 L 26.601562 22.40625 L 26.601562 19.867188 L 3.398438 19.867188 Z M 3.398438 16.054688 L 26.601562 16.054688 L 26.601562 13.515625 L 3.398438 13.515625 Z M 3.398438 7.164062 L 3.398438 9.703125 L 26.601562 9.703125 L 26.601562 7.164062 Z M 3.398438 7.164062 "
+                                                fill-opacity="1" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="worlds">
+                    <div class="card dark-card">
+                        <div class="card-img-container">
+                            <img src="./bundle/images/world.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icons">
+                                <div class="icon-top-right">
+                                    <img src="./bundle/images/icon.png" alt="Icon" height="50px">
+                                </div>
+                                <div class="icon-bottom">
+                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="61" height="61"
+                                        fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path
+                                            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                                            id="mainIconPathAttribute" fill="green"></path>
+                                    </svg>
+                                    <svg height="60px" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                        viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet"
+                                        version="1.0">
+                                        <defs>
+                                            <clipPath id="id1">
+                                                <path
+                                                    d="M 3.386719 7.164062 L 26.613281 7.164062 L 26.613281 22.40625 L 3.386719 22.40625 Z M 3.386719 7.164062 "
+                                                    clip-rule="nonzero" />
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#id1)">
+                                            <path fill="rgb(100%, 100%, 100%)"
+                                                d="M 3.398438 22.40625 L 26.601562 22.40625 L 26.601562 19.867188 L 3.398438 19.867188 Z M 3.398438 16.054688 L 26.601562 16.054688 L 26.601562 13.515625 L 3.398438 13.515625 Z M 3.398438 7.164062 L 3.398438 9.703125 L 26.601562 9.703125 L 26.601562 7.164062 Z M 3.398438 7.164062 "
+                                                fill-opacity="1" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="worlds">
+                    <div class="card dark-card">
+                        <div class="card-img-container">
+                            <img src="./bundle/images/world.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icons">
+                                <div class="icon-top-right">
+                                    <img src="./bundle/images/icon.png" alt="Icon" height="50px">
+                                </div>
+                                <div class="icon-bottom">
+                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="61" height="61"
+                                        fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id="IconChangeColor">
+                                        <path
+                                            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                                            id="mainIconPathAttribute" fill="green"></path>
+                                    </svg>
+                                    <svg height="60px" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                        viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet"
+                                        version="1.0">
+                                        <defs>
+                                            <clipPath id="id1">
+                                                <path
+                                                    d="M 3.386719 7.164062 L 26.613281 7.164062 L 26.613281 22.40625 L 3.386719 22.40625 Z M 3.386719 7.164062 "
+                                                    clip-rule="nonzero" />
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#id1)">
+                                            <path fill="rgb(100%, 100%, 100%)"
+                                                d="M 3.398438 22.40625 L 26.601562 22.40625 L 26.601562 19.867188 L 3.398438 19.867188 Z M 3.398438 16.054688 L 26.601562 16.054688 L 26.601562 13.515625 L 3.398438 13.515625 Z M 3.398438 7.164062 L 3.398438 9.703125 L 26.601562 9.703125 L 26.601562 7.164062 Z M 3.398438 7.164062 "
+                                                fill-opacity="1" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
