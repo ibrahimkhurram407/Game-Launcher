@@ -98,6 +98,8 @@ section {
     gap: 10px;
     grid-template-rows: repeat(2, 1fr); /* Repeat 2 rows with 1fr each */
     padding: 10px;
+    height: calc(100vh - 86px);
+    overflow: auto; /* Use 'scroll' if you always want to show the scrollbar */
   }
   
 
@@ -166,6 +168,28 @@ section {
     fill: #fff; /* Icon color */
     cursor: pointer;
   }
+
+/* CSS for the world-name container */
+.world-name {
+  text-align: center;
+  padding: 10px 0px;
+  width: 100%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  color: #fff; /* Text color (white) */
+}
+
+/* CSS for the h6 element (MARIO + RABBIDS) */
+.world-name h6 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* CSS for the p element (Sparks of Hope!) */
+.world-name p {
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
   
   /* Nav Bar */
 
