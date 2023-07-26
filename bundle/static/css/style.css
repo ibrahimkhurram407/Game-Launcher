@@ -38,20 +38,34 @@ aside {
 
 /* Navigation */
 ul {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 li {
-    list-style: none !important;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-li img {
-    border-radius: 10px;
+li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateX(5px);
+}
+
+li svg {
+  margin-right: 10px;
 }
 
 li a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
+}
+
+li a:hover {
+  color: lightgreen;
 }
 
 
@@ -92,15 +106,17 @@ section {
     overflow-y: auto; Enable vertical scrolling when content exceeds 100vh */
 }
 
-.main {
+  .main {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Repeat 5 columns with 1fr each */
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Automatically adjust columns */
+    grid-row-gap: 20px;
     grid-template-rows: repeat(2, 1fr); /* Repeat 2 rows with 1fr each */
     padding: 10px;
     height: calc(100vh - 86px);
     overflow: auto; /* Use 'scroll' if you always want to show the scrollbar */
   }
+  
+  
   
 
 /* Cards */
@@ -150,7 +166,7 @@ section {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .icon-top-right {
     position: absolute;
     top: 8px;
@@ -163,10 +179,32 @@ section {
     gap: 8px;
   }
   
-  .icon-play,
-  .icon-options {
+  .icons {
     fill: #fff; /* Icon color */
     cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0px 8px 16px rgba(99, 99, 99, 0.3);
+    transform: translateY(-10px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card-icons svg:hover {
+    fill: green; 
+    transition: fill 0.3s ease;
+  }
+
+  .icon-play:hover path {
+    fill: rgb(45, 231, 45);
+  }
+
+  .icon-fav:hover path {
+    fill: rgb(231, 45, 175);
+  }
+
+  .nav-icons:hover path {
+    fill: lightcoral;
   }
 
 /* CSS for the world-name container */
@@ -191,9 +229,7 @@ section {
 }
 
   
-  /* Nav Bar */
-
-  /* Assuming your parent container has a class named "parent-container" */
+/* Nav Bar */
 
 .upper {
     display: flex;
@@ -202,12 +238,7 @@ section {
     background-color: #333; /* Dark background color */
     padding: 10px 20px;
   }
-  
-  .nav-bar {
-    display: flex;
-    align-items: center;
-  }
-  
+   
   .search-bar {
     display: flex;
     align-items: center;
@@ -228,6 +259,11 @@ section {
     color: #fff; /* White color for the input text */
   }
   
+  .nav-bar {
+    display: flex;
+    align-items: center;
+  }
+
   .nav-bar a {
     color: #fff; /* White color for the anchor links */
     margin-right: 20px;
@@ -261,6 +297,3 @@ section {
     fill: #fff; /* White color for the svg icons */
     margin-right: 5px;
   }
-  
-  /* navbar of main section */
-

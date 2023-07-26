@@ -110,14 +110,14 @@
                 </div>
                 <div class="header">
                     <a href="./account/index.html" id="account">
-                        <svg class="" height="30px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <svg class="nav-icons" class="" height="30px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
                                 d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-4.987-3.744A7.966 7.966 0 0 0 12 20c1.97 0 3.773-.712 5.167-1.892A6.979 6.979 0 0 0 12.16 16a6.981 6.981 0 0 0-5.147 2.256zM5.616 16.82A8.975 8.975 0 0 1 12.16 14a8.972 8.972 0 0 1 6.362 2.634 8 8 0 1 0-12.906.187zM12 13a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
                                 fill="currentColor" />
                         </svg>
                     </a>
                     <a href="#" id="alphabetical-order" onclick="sortAlphabetically()">
-                        <svg style="color: white" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                        <svg class="nav-icons" style="color: white" width="15" height="15" viewBox="0 0 15 15" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M3.00001 13.2929V0H4.00001V13.2929L6.14645 11.1464L6.85356 11.8536L3.85356 14.8536C3.75979 14.9473 3.63262 15 3.50001 15C3.3674 15 3.24022 14.9473 3.14645 14.8536L0.146454 11.8536L0.853561 11.1464L3.00001 13.2929ZM11.5 1C10.6716 1 10 1.67157 10 2.5V4H13V2.5C13 1.67157 12.3284 1 11.5 1ZM13 5V7H14V2.5C14 1.11929 12.8807 0 11.5 0C10.1193 0 9.00001 1.11929 9.00001 2.5V7H10V5H13ZM9.00001 8H12C13.1046 8 14 8.89543 14 10C14 10.5973 13.7381 11.1335 13.3229 11.5C13.7381 11.8665 14 12.4027 14 13C14 14.1046 13.1046 15 12 15H9.00001V8ZM12 11C12.5523 11 13 10.5523 13 10C13 9.44772 12.5523 9 12 9H10V11H12ZM10 12H12C12.5523 12 13 12.4477 13 13C13 13.5523 12.5523 14 12 14H10V12Z"
@@ -125,7 +125,7 @@
                         </svg>
                     </a>
                     <a href="#" id="favourites" onclick="filterFavorites()">
-                        <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        <svg class="nav-icons" style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
                                 d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
@@ -151,56 +151,8 @@
                 </div>
             </div>
             <div class="main">
-                <div class="worlds" id="world-1">
-                    <div class="filtered-worlds"></div>
-                </div>
-                <!-- <div class="worlds" id="world-1">
-                    <div class="card dark-card">
-                        <div class="card-img-container">
-                            <img src="./bundle/images/world.jpg" class="card-img" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-icons">
-                                <div class="icon-top-right">
-                                    <img src="./bundle/images/icon.png" alt="Icon" height="50px">
-                                </div>
-                                <div class="icon-bottom">
-                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="61" height="61"
-                                        fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id="IconChangeColor">
-                                        <path
-                                            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
-                                            id="mainIconPathAttribute" fill="green"></path>
-                                    </svg>
-                                    <svg height="60px" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
-                                        viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet"
-                                        version="1.0">
-                                        <defs>
-                                            <clipPath id="id1">
-                                                <path
-                                                    d="M 3.386719 7.164062 L 26.613281 7.164062 L 26.613281 22.40625 L 3.386719 22.40625 Z M 3.386719 7.164062 "
-                                                    clip-rule="nonzero" />
-                                            </clipPath>
-                                        </defs>
-                                        <g clip-path="url(#id1)">
-                                            <path fill="rgb(100%, 100%, 100%)"
-                                                d="M 3.398438 22.40625 L 26.601562 22.40625 L 26.601562 19.867188 L 3.398438 19.867188 Z M 3.398438 16.054688 L 26.601562 16.054688 L 26.601562 13.515625 L 3.398438 13.515625 Z M 3.398438 7.164062 L 3.398438 9.703125 L 26.601562 9.703125 L 26.601562 7.164062 Z M 3.398438 7.164062 "
-                                                fill-opacity="1" fill-rule="nonzero" />
-                                        </g>
-                                    </svg>
-                                    <div class="world-name">
-                                        <h6>MARIO + RABBIDS</h6>
-                                        <p>Sparks of Hope!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+                <!-- Here the cards spawn -->
             </div>
-
-
-
         </section>
 
     </main>
